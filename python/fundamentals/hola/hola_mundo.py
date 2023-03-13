@@ -1,6 +1,6 @@
 import random
 
-print('Welcome to Python!')
+print('Bienvenido a python')
 
 print('This is a loop printing 5 times')
 for x in range(1, 6):
