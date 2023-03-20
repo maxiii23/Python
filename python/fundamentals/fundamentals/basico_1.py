@@ -23,7 +23,7 @@ for z in range(1, 500000, 2):
 print( "la suma es ", suma)
 
 
-#imprime números positivos comenzando desde el 2018, en cuenta regresiva de 4 en 4.
+#imprime números positivos empezando desde el 2018, en cuenta regresiva de 4 en 4.
 for i in range(2018, 0, -4):
     print(i)
 

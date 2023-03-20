@@ -8,7 +8,7 @@ print(número_de_grupos_alimentarios())
 def número_de_ramas_militares():
     return 5
 print(número_de_días_en_una_semana_silicona_o_lados_del_triángulo() + número_de_ramas_militares())
-# daria error ya que "número_de_días_en_una_semana_silicona_o_lados_del_triángulo" no esta definido previamente en algun arreglo
+# dara error ya que "número_de_días_en_una_semana_silicona_o_lados_del_triángulo" no esta definido previamente en algun arreglo
 #3
 def número_de_libros_en_espera():
     return 5
@@ -32,13 +32,14 @@ def add(b,c):
     print(b+c)
 print(add(1,2) + add(2,3))
 # dara los resultados de 1+2 y 2+3 y luego dara un TyoeError ya  que no podemos sumar 2 funciones que no retornan ningun valor
-'''
+
 #7
 def concatenar(b,c):
     return str(b)+str(c)
 ="función de soporte python from-rainbow">print(concatenar(2,5))
 
-#esta dara error porque esta mal la sintaxis de este fragmento de codigo
+#va a dar error ya que esta mal la sintaxis de este fragmento de codigo
+
 
 
 #8
@@ -51,4 +52,89 @@ def número_de_océanos_o_dedos_o_continentes():
         return 10
     return 7
 print(número_de_oceános_o_dedos_o_continentes())
- #no imprimira nada ya que "número_de_oceános_o_dedos_o_continentes" no es lo mismo que "número_de_océanos_o_dedos_o_continentes" y al no estar bien definido da un error de nombre
+ #no imprime nada porque "número_de_oceános_o_dedos_o_continentes" no es lo mismo que "número_de_océanos_o_dedos_o_continentes" y al no estar definido da error de nombre
+
+#9
+def number_of_days_in_a_week_silicon_or_triangle_sides(b,c):
+    if b<c:
+        return 7
+    else:
+        return 14
+    return 3
+print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3))
+# esto dara como resultado 7 ya que 2 es menor que 3 y se cumple el primer if 
+print(number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
+#esto dara 14 ya que 5 es mayor que 3 y se cumple el else
+print(number_of_days_in_a_week_silicon_or_triangle_sides(2,3) + number_of_days_in_a_week_silicon_or_triangle_sides(5,3))
+#estodara 21 ya que al sumarse los 2 valores "7 y 14" dara este resultado
+#10
+def addition(b,c):
+    return b+c
+    return 10
+print(addition(3,5))
+#esto dara 8 ya que llama a la funcion y sumara los 2 valores que le demos (el segundo returnno ara nada)
+#11
+b = 500
+print(b)
+#esto dara 500 ya que imprime 500
+def foobar():
+    b = 300
+    print(b)
+print(b)
+#esto imprime 500 ya que llamamos denuevo a "b" 
+foobar()
+#esto dara 300 ya que en la funcion llama a "b" dentro de esta misma y lo imprime 
+print(b) 
+#esto imprime 500 ya que llamamos denuevo a "b" 
+#12
+b = 500
+print(b)
+#esto dara 500 ya que llama a "b" 
+def foobar():
+    b = 300
+    print(b)
+    return b
+print(b)
+#dara 500 ya que llama de nuevo a 'b' 
+foobar()
+#esto llama a la funcion que imprime 300 ya que en la funciopn tenemos un print (el retur no ara nada ya estamis llamando a la funcion y no imprimiendola)
+print(b)
+#dara 500 ya que llama de nuevo a 'b'
+#13
+b = 500
+print(b)
+#esto dara 500 ya que "b" es igual a esto
+def foobar():
+    b = 300
+    print(b)
+    return b
+print(b)
+#dara 500 ya que llama de nuevo a 'b'
+b=foobar()
+#esto dara 300 ya que llama a la funcion
+print(b)
+#esto dara 300 ya que se le asigno un nuevo valor a "b" que sera 300 
+#14
+def foo():
+    print(1)
+    bar()
+    print(2)
+def bar():
+    print(3)
+foo()
+#esto dara "1", "3"y "2" ya que la funcion foo imprime primero 1 luego llama a bar (que es 3) y luego imprime 2
+
+#15
+def foo():
+    print(1)
+    x = bar()
+    print(x)
+    return 10
+def bar():
+    print(3)
+    return 5
+y = foo()
+#esto dara un valor a y 
+print(y)
+#imprimira y que sera 1, 3, 5, 10
+'''
